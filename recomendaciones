@@ -3,5 +3,6 @@
 3.- Incluir caché.
 4.- Crear un manejador de excepciones global.
 5.- Incluir autenticación en las peticiones.
-6.- Realizar la implementación mediante la programación asincrona incluyendo en las dependencias la librería
+6.- Utilizar la librería gson en los test
+7.- Realizar la implementación mediante la programación asincrona incluyendo en las dependencias la librería
     spring-boot-starter-webflux
