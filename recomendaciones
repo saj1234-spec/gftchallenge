@@ -5,5 +5,5 @@
 5.- Incluir autenticación en las peticiones.
 6.- Utilizar la librería gson en los test.
 7.- Utilizar H2 como base de datos en memoria.
-7.- Realizar la implementación mediante la programación asincrona incluyendo en las dependencias la librería
+8.- Realizar la implementación mediante la programación asincrona incluyendo en las dependencias la librería
     spring-boot-starter-webflux
