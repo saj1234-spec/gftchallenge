@@ -1,8 +1,9 @@
-1.- Sanitizar todos los datos de entrada que se almacenen
-2.- Controlar y testear las cuentas que no existen
-3.- Incluir caché.
+1.- Sanitizar todos los datos de entrada que se almacenen.
+2.- Controlar y testear las cuentas que no existen.
+3.- Incluir cachÃ©.
 4.- Crear un manejador de excepciones global.
-5.- Incluir autenticación en las peticiones.
-6.- Utilizar la librería gson en los test
-7.- Realizar la implementación mediante la programación asincrona incluyendo en las dependencias la librería
+5.- Incluir autenticaciÃ³n en las peticiones.
+6.- Utilizar la librerÃ­a gson en los test.
+7.- Utilizar H2 como base de datos en memoria.
+7.- Realizar la implementaciÃ³n mediante la programaciÃ³n asincrona incluyendo en las dependencias la librerÃ­a
     spring-boot-starter-webflux
