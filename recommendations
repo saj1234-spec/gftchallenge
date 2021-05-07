@@ -1,6 +1,6 @@
 1. Sanitization of all input data that will persist.
 
-2. Include caffeine cache when retrieving accounts.
+2. Include caffeine cache to get stored accounts.
 
 3. Include authentication in requests.
 
