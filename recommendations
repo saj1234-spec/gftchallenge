@@ -4,7 +4,7 @@
 
 3. Include authentication in requests.
 
-4. Replace the repository to store the accounts with H2 DB.
+4. Replace the repository that stores the accounts with H2 DB.
 
 5. Create a global exception handler.
 
