@@ -1,10 +1,15 @@
-1.- Sanitizar todos los datos de entrada que se almacenen.
-2.- Controlar y testear las cuentas que no existen.
-3.- Incluir caché.
-4.- Crear un manejador de excepciones global.
-5.- Incluir autenticación en las peticiones.
-6.- Utilizar la librería gson en los test.
-7.- Utilizar Mockito
-8.- Utilizar H2 como base de datos en memoria.
-9.- Realizar la implementación mediante la programación asincrona incluyendo en las dependencias la librería
-    spring-boot-starter-webflux
+1. Sanitization of all input data that will persist.
+
+2. Verify and test that the account identifiers exist in the transaction request.
+
+3. Include caffeine cache when retrieving accounts.
+
+4. Create a global exception handler.
+
+5. Include authentication in requests.
+
+6. Use the gson and mockito libraries in the tests.
+
+7. Replace the repository to store the accounts with H2 DB.
+
+8. Replace the current programming paradigm with asynchronous programming using the spring-boot-starter-webflux library
