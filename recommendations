@@ -1,15 +1,20 @@
-1. Sanitization of all input data that will persist.
+1. Remove getter label from AccountsService.java
 
-2. Include caffeine cache to get stored accounts.
+2. Use AccountsRepository with @Autowired tag in AccountsControllerTest class
+   Do not call the clearAccounts method through the AccountsService object
 
-3. Include authentication in requests.
+3. Sanitization of all input data that will persist.
 
-4. Replace the repository that stores the accounts with H2 DB.
+4. Include caffeine cache to get stored accounts.
 
-5. Create a global exception handler.
+5. Include authentication in requests.
 
-6. Verify and test that the account identifiers exist in the transaction request.
+6. Replace the repository that stores the accounts with H2 DB.
 
-7. Use the gson and mockito libraries in the tests.
+7. Create a global exception handler.
 
-8. Replace the current programming paradigm with asynchronous programming using the spring-boot-starter-webflux library
+8. Verify and test that the account identifiers exist in the transaction request.
+
+9. Use the gson and mockito libraries in the tests.
+
+10. Replace the current programming paradigm with asynchronous programming using the spring-boot-starter-webflux library
