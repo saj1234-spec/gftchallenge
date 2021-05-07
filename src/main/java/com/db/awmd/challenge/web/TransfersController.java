@@ -31,7 +31,7 @@ public class TransfersController {
 
   @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
   public ResponseEntity<Object> transfer(@RequestBody @Valid Transfer transfer) {
-    log.info("Creating account {}", transfer);
+    log.info("Creating transfer {}", transfer);
 
     try {
     	this.transfersService.transfer(transfer);
