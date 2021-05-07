@@ -19,6 +19,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.web.context.WebApplicationContext;
 
 import com.db.awmd.challenge.domain.Account;
+import com.db.awmd.challenge.repository.AccountsRepository;
 import com.db.awmd.challenge.service.AccountsService;
 
 @RunWith(SpringRunner.class)
@@ -30,6 +31,9 @@ public class TransfersControllerTest {
 
   @Autowired
   private AccountsService accountsService;
+  
+  @Autowired
+  private AccountsRepository accountsRepository;
 
   @Autowired
   private WebApplicationContext webApplicationContext;
@@ -39,7 +43,7 @@ public class TransfersControllerTest {
     this.mockMvc = webAppContextSetup(this.webApplicationContext).build();
 
     // Reset the existing accounts before each test.
-    accountsService.getAccountsRepository().clearAccounts();
+    accountsRepository.clearAccounts();
   }
 
   @Test
