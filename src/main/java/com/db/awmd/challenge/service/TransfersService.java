@@ -10,7 +10,6 @@ import com.db.awmd.challenge.domain.Transfer;
 import com.db.awmd.challenge.exception.NegativeBalanceException;
 import com.db.awmd.challenge.repository.AccountsRepository;
 
-import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 
 @Service
@@ -19,8 +18,6 @@ public class TransfersService {
   private final String TRANSFER_FROM_MESSAGE = "Transfer sent to account %s with an amount of %s";
   private final String TRANSFER_TO_MESSAGE = "Transfer received from account %s with an amount of %s";
   
-  
-  @Getter
   private final AccountsRepository accountsRepository;
   
   private final NotificationService notificationService;

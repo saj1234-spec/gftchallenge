@@ -18,28 +18,28 @@ import com.db.awmd.challenge.service.TransfersService;
 import lombok.extern.slf4j.Slf4j;
 
 @RestController
-@RequestMapping("/v1/transfer")
+@RequestMapping("/v1/transfers")
 @Slf4j
 public class TransfersController {
 	
-	  private final TransfersService transfersService;
-	  
-	  @Autowired
-	  public TransfersController(TransfersService transfersService) {
-	    this.transfersService = transfersService;
-	  }
-	
-	  @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
-	  public ResponseEntity<Object> transfer(@RequestBody @Valid Transfer transfer) {
-	    log.info("Creating account {}", transfer);
+  private final TransfersService transfersService;
+  
+  @Autowired
+  public TransfersController(TransfersService transfersService) {
+    this.transfersService = transfersService;
+  }
 
-	    try {
-	    	this.transfersService.transfer(transfer);
-	    } catch (NegativeBalanceException nbe) {
-	      return new ResponseEntity<>(nbe.getMessage(), HttpStatus.BAD_REQUEST);
-	    }
+  @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
+  public ResponseEntity<Object> transfer(@RequestBody @Valid Transfer transfer) {
+    log.info("Creating account {}", transfer);
 
-	    return new ResponseEntity<>(HttpStatus.CREATED);
-	  }
+    try {
+    	this.transfersService.transfer(transfer);
+    } catch (NegativeBalanceException nbe) {
+      return new ResponseEntity<>(nbe.getMessage(), HttpStatus.BAD_REQUEST);
+    }
+
+    return new ResponseEntity<>(HttpStatus.CREATED);
+  }
 
 }
